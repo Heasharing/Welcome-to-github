@@ -1,0 +1,56 @@
+Code make border Radius in  html & CSS
+----------------------- Code Html------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/raduis.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="link">
+        <a href="#"><b>Button1</b></a>
+        <a href="#"><b>Button2</b></a>
+        <a href="#"><b>Button3</b></a>
+        <a href="#"><b>Button4</b></a>
+        <br>
+    </div>
+        <div class="image1">
+        </div>
+        <br>
+        <div class="image2"></div>
+</body>
+</html>
+-----------------------------Code CSS---------------------------
+.link a{
+    border-radius: 98px;
+    background: #eca6b6;
+    padding:5px;
+    width: 300px;
+    height: 46px;
+    text-decoration: none;
+    border: solid 1px;
+    font-family: -webkit-body;
+    font: italic;
+    margin-bottom: 100px;
+}
+.image1{
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: No-repeat;
+    background-size: cover;
+    padding: 20px;
+    background: url(/Picture/2.jpg);
+    width: 321px;
+    height: 182px;
+}
+.image2{
+    border-radius: 109px 16px 30px 20px; 
+    background: url(/Picture/3.jpg);
+    background-repeat: repeat;
+    padding: 20px;
+    width: 321px;
+    height: 184px;
+}
