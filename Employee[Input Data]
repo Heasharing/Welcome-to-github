@@ -1,0 +1,66 @@
+---------------Class Employee----------------
+package Homework_Java;
+
+import javax.naming.Name;
+
+public class Employee {
+    private int Id;
+    private String FirstName;
+    private String LastName;
+    private int Salary;
+    public Employee(int Id,String FirstName,String LastName,int Salary){
+        this.Id = Id;
+        this.FirstName =FirstName;
+        this.LastName=LastName;
+        this.Salary=Salary;
+
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+    public String getLastName(){
+        return LastName;
+    }
+    public String getName(){
+        return LastName+" "+FirstName;
+    }
+    public int getSalary(){
+        return Salary;
+    }
+    //void not display value
+    public void setSalary(int salary){
+        this.Salary=Salary;
+    }
+    public int getAnnualSalary(){
+        return Salary*12;
+    }
+    public int raiseSalary( int percent){
+        return Salary*percent/100+Salary;
+
+    }
+    //public String toString(){
+       // return "Employee[\nId="+Id+",\nFistName="+FirstName+",\nLastName="+LastName+",\nName="+getName()+"\nSalary="+this.Salary+"]";
+    //}
+}
+----------------------------------------------------------------------Declare Main Class-----------------------------------------------------------------
+package Homework_Java;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Employee emp = new Employee(2000,"Hea","Hom",20);
+        System.out.println(emp.toString());
+        System.out.println("Id:"+emp.getId());
+        System.out.println("FistName:"+emp.getFirstName());
+        System.out.println("LatName:"+emp.getLastName());
+        System.out.println("Salary:"+emp.getSalary());
+        System.out.println("RaiseSalary:"+emp.raiseSalary(10));
+        System.out.println("AnnualSalary:"+emp.getAnnualSalary());
+
+
+    }
+}
